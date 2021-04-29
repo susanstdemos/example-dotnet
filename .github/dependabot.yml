@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: SharpCompress
+    versions:
+    - 0.28.1
+  - dependency-name: NUnit
+    versions:
+    - 3.13.1
+  - dependency-name: MySql.Data
+    versions:
+    - 8.0.23
